@@ -18,8 +18,10 @@ The objective of this experiment was to compare the execution performance of Lin
 - Works on both sorted and unsorted data.
 - Time Complexity: O(n)
 
-Execution Time:
-0.0052 seconds (approximately)
+Metric	              Best case	                  Average case	                    Worst case
+Time Complexity	       O(1)	                         O(n)	                          O(n)
+Execution Time	  0.002215147018432617 sec    0.003108978271484375 sec	     0.008442401885986328 sec
+Search Method	     Sequential	                   Sequential	                    Sequential
 
 ### Binary Search
 
@@ -27,8 +29,10 @@ Execution Time:
 - Requires sorted data.
 - Time Complexity: O(log n)
 
-Execution Time:
-(Add the time shown after running binary_search.py)
+Metric                 Best case	                     Average case	                  Worst case
+Time Complexity	        O(1)	                           O(log n)	                       O(log n)
+Execution Time	    1.5974044799804688e-05 sec	   5.0067901611328125e-06 sec 	  6.198883056640625e-06 sec
+Search Method	      Divide and Conquer	          Divide and Conquer	          Divide and Conquer
 
 ## Comparison
 
@@ -37,7 +41,7 @@ Execution Time:
 | Time Complexity | O(n) | O(log n) |
 | Data Requirement | Unsorted or Sorted | Sorted Only |
 | Speed | Slower | Faster |
-
+=
 ## Conclusion
 
 Binary Search performed much faster than Linear Search because it reduces the search space by half in every step. Linear Search checks elements one by one, making it slower for large datasets.

@@ -1,10 +1,10 @@
-import random
 import time
 
-# Create a list of 100000 random numbers
-numbers = [random.randint(1, 1000000) for _ in range(100000)]
+numbers = list(range(1, 100001))
 
-target = numbers[-1]
+#target = 100000   # Worst Case
+target = 50000  # Average Case
+# target = 1      # Best Case
 
 start = time.time()
 

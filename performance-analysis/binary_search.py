@@ -1,16 +1,13 @@
-import random
 import time
 
-# Create a sorted list of 100000 random numbers
-numbers = sorted([random.randint(1, 1000000) for _ in range(100000)])
+numbers = list(range(1, 100001))
 
-# Target element
-target = numbers[-1]
+#target = 50000    # Worst Case
+#target = 75000  # Average Case
+target = 100000 # Best Case
 
-# Start the timer
 start = time.time()
 
-# Binary Search
 left = 0
 right = len(numbers) - 1
 
@@ -24,7 +21,6 @@ while left <= right:
     else:
         right = mid - 1
 
-# Stop the timer
 end = time.time()
 
 print("Target Found!")
