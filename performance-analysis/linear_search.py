@@ -1,18 +1,17 @@
 import time
 
-numbers = list(range(1, 100001))
-
-#target = 100000   # Worst Case
-target = 50000  # Average Case
-# target = 1      # Best Case
+numbers = list(range(1, 50000000))
+target = 50000000
 
 start = time.time()
 
-for i in numbers:
-    if i == target:
+for num in numbers:
+    if num == target:
+        print("Target Found!")
         break
 
 end = time.time()
 
-print("Target Found!")
 print("Execution Time:", end - start, "seconds")
+
+time.sleep(10)

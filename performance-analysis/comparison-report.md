@@ -41,7 +41,7 @@ Search Method	      Divide and Conquer	          Divide and Conquer	          Di
 | Time Complexity | O(n) | O(log n) |
 | Data Requirement | Unsorted or Sorted | Sorted Only |
 | Speed | Slower | Faster |
-=
+
 ## Conclusion
 
 Binary Search performed much faster than Linear Search because it reduces the search space by half in every step. Linear Search checks elements one by one, making it slower for large datasets.

@@ -3,8 +3,8 @@ import time
 numbers = list(range(1, 100001))
 
 #target = 50000    # Worst Case
-#target = 75000  # Average Case
-target = 100000 # Best Case
+#target = 75000    # Average Case
+target = 100000    # Best Case
 
 start = time.time()
 
@@ -25,3 +25,5 @@ end = time.time()
 
 print("Target Found!")
 print("Execution Time:", end - start, "seconds")
+
+time.sleep(10)

@@ -10,6 +10,7 @@ The project demonstrates the use of AI-assisted software development practices, 
 
 ---
 
+
 ## Features
 
 - Calculator Tool
@@ -31,6 +32,26 @@ The project demonstrates the use of AI-assisted software development practices, 
 - py-spy
 
 ---
+## Justification & Analysis
+Based on the profiling results, Binary Search performed better than Linear Search. Linear Search checks each element one by one, resulting in higher execution time. Binary Search divides the search space into two halves and reaches the target faster. The measured execution times support the theoretical complexities O(n) and O(log n). For larger datasets, the difference in performance will become even more significant.
+
+---
+
+## AI Contribution Note
+AI Tool Used: ChatGPT
+
+What AI Helped With:
+- Code structure
+- Profiling guidance
+- Report formatting
+
+What I Did Myself:
+- Created files
+- Ran programs
+- Collected results
+- Executed Git commands
+- Uploaded to GitHub
+
 
 ## Project Structure
 
@@ -49,3 +70,9 @@ basic-ai-agent/
 │   ├── binary-search_best_case.png
 |   ├── binary-search_average_case.png
 │   └── py-spy-output.png
+
+---
+
+## Conclusion
+This profiling exercise helped me understand the practical performance difference between search algorithms. I learned how to use py-spy for profiling and how to analyze execution time using real measurements.
+
