@@ -73,6 +73,12 @@ basic-ai-agent/
 
 ---
 
+## Modern AI Architectures (Weeks 8–11)
+
+Created a Multi-Agent Game Strategy architecture using PlantUML and the C4 approach.
+
+---
+
 ## Conclusion
 This profiling exercise helped me understand the practical performance difference between search algorithms. I learned how to use py-spy for profiling and how to analyze execution time using real measurements.
 

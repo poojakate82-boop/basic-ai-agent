@@ -1,29 +1,34 @@
-# Modern AI Architectures – Multi-Agent Game Strategy
+# Modern AI Architectures
 
 ## Objective
+Study the C4 Model and create an architectural diagram for a multi-agent game strategy system.
 
-To study the C4 Model and understand how multiple AI agents collaborate in a game strategy system.
+## Multi-Agent Game Strategy System
 
-## Architecture Overview
+The system contains multiple AI agents that cooperate to make decisions in a game environment.
 
-The system consists of four agents:
+### Agents
 
-### Strategy Agent
-Creates the overall game strategy.
+1. Strategy Agent
+   - Creates overall game strategy.
 
-### Resource Agent
-Manages game resources.
+2. Resource Agent
+   - Manages resources and economy.
 
-### Combat Agent
-Handles attack and defense actions.
+3. Combat Agent
+   - Handles attack and defense actions.
 
-### Decision Agent
-Collects information from all agents and generates the final decision.
+4. Decision Agent
+   - Receives information from all agents and makes the final decision.
 
-## Workflow
+### Architecture
 
-Player → Agents → Decision Agent → Final Game Decision
+The player interacts with the system.
+
+The Strategy Agent, Resource Agent, and Combat Agent send information to the Decision Agent.
+
+The Decision Agent generates the final game action.
 
 ## Conclusion
 
-This activity helped me understand Modern AI Architectures and Multi-Agent Systems using the C4 architectural approach.
+The C4 Model helps visualize interactions between multiple AI agents and improves system understanding.

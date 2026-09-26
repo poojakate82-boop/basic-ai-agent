@@ -8,3 +8,4 @@
 | ADR-001-Tech-Stack.md | Architecture Decision Record | AI | Reviewed and saved |
 | C4-System-Context.puml | System Context Diagram | AI | Added to project |
 | agent.py | Basic AI Agent code | AI + Student | Tested and executed |
+| 2026-09-26 | Created Multi-Agent Game Strategy architecture and PlantUML diagram | ChatGPT |
