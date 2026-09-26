@@ -1,0 +1,21 @@
+@startuml
+
+actor Player
+
+rectangle "Multi-Agent Game Strategy System" {
+
+  rectangle "Strategy Agent" as SA
+  rectangle "Resource Agent" as RA
+  rectangle "Combat Agent" as CA
+  rectangle "Decision Agent" as DA
+
+  SA --> DA : Strategy
+  RA --> DA : Resources
+  CA --> DA : Combat Data
+}
+
+Player --> SA
+Player --> RA
+Player --> CA
+
+@enduml
