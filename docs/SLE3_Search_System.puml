@@ -1,0 +1,65 @@
+@startuml
+title SLE-3: Search System - Full C4 Architecture
+
+skinparam shadowing false
+skinparam roundcorner 15
+skinparam defaultFontName Arial
+
+' =========================================================
+' LEVEL 1 - CONTEXT DIAGRAM
+' =========================================================
+
+rectangle "USER" as User
+
+rectangle "SEARCH SYSTEM\n\nLinear Search\nBinary Search" as SearchSystem
+
+User --> SearchSystem : Search input\n(List + Target)
+SearchSystem --> User : Search result\n(Found / Not Found)
+
+newpage
+title SLE-3: Level 2 - Container Diagram
+
+rectangle "USER" as User2
+
+rectangle "INPUT MODULE" as Input
+rectangle "SEARCH CONTROLLER" as Controller
+rectangle "LINEAR SEARCH" as Linear
+rectangle "BINARY SEARCH" as Binary
+rectangle "RESULT MODULE" as Result
+
+User2 --> Input : List + Target
+Input --> Controller : Valid input
+
+Controller --> Linear : Select Linear Search
+Controller --> Binary : Select Binary Search
+
+Linear --> Result : Search result
+Binary --> Result : Search result
+
+Result --> User2 : Found / Not Found
+
+newpage
+title SLE-3: Level 3 - Component Diagram\nBinary Search Container
+
+rectangle "BINARY SEARCH ENGINE" {
+
+    rectangle "Initialize Low & High" as Init
+
+    rectangle "Calculate Mid" as Mid
+
+    rectangle "Compare Target\nwith Middle Element" as Compare
+
+    rectangle "Update Search Range" as Update
+
+    rectangle "Return Search Result" as Return
+}
+
+Init --> Mid
+Mid --> Compare
+
+Compare --> Return : Target found
+Compare --> Update : Target not found
+
+Update --> Mid : Continue search
+
+@enduml

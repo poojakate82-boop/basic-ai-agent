@@ -1,0 +1,32 @@
+@startuml
+title SLE-3 Level 2 - Container Diagram
+
+skinparam shadowing false
+skinparam roundcorner 15
+skinparam defaultFontName Arial
+
+rectangle "USER" as User
+
+rectangle "INPUT MODULE\n\nAccepts list and target value" as Input
+
+rectangle "SEARCH CONTROLLER\n\nSelects search algorithm" as Controller
+
+rectangle "LINEAR SEARCH\n\nChecks elements sequentially" as Linear
+
+rectangle "BINARY SEARCH\n\nDivides sorted data into halves" as Binary
+
+rectangle "RESULT MODULE\n\nDisplays search result" as Result
+
+User --> Input : List + Target
+
+Input --> Controller : Input data
+
+Controller --> Linear : Select Linear Search
+Controller --> Binary : Select Binary Search
+
+Linear --> Result : Result
+Binary --> Result : Result
+
+Result --> User : Found / Not Found
+
+@enduml
