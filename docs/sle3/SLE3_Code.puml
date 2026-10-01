@@ -1,0 +1,29 @@
+@startuml
+title SLE-3 Level 4 - Code Diagram
+
+skinparam shadowing false
+skinparam roundcorner 15
+skinparam defaultFontName Arial
+
+rectangle "Binary Search Engine" {
+
+    rectangle "binary_search(arr, target)" as Search
+
+    rectangle "calculate_mid(low, high)" as Mid
+
+    rectangle "compare_target(arr[mid], target)" as Compare
+
+    rectangle "update_range(low, high)" as Update
+
+    rectangle "return_result(index)" as Result
+}
+
+Search --> Mid : low, high
+Mid --> Compare : mid
+
+Compare --> Result : Target found
+Compare --> Update : Target not found
+
+Update --> Mid : New low / high
+
+@enduml
