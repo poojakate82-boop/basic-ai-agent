@@ -1,0 +1,31 @@
+@startuml
+title SLE-3 Level 3 - Component Diagram\nLinear Search Engine
+
+skinparam shadowing false
+skinparam roundcorner 15
+skinparam defaultFontName Arial
+
+rectangle "LINEAR SEARCH ENGINE" {
+
+    rectangle "Initialize Index" as Init
+
+    rectangle "Compare Target\nwith Current Element" as Compare
+
+    rectangle "Move to Next Index" as Next
+
+    rectangle "Check End of List" as Check
+
+    rectangle "Return Search Result" as Result
+}
+
+Init --> Compare : Start at index 0
+
+Compare --> Result : Target found
+Compare --> Next : Target not found
+
+Next --> Check : Next index
+
+Check --> Compare : More elements
+Check --> Result : End of list
+
+@enduml
